@@ -73,6 +73,16 @@ Essa parte está sendo resolvida na linha 55 com o gap de 20px
     transform: scale(1.3);
 }
 
+.home video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width:1040px) {
     section {
         padding: 100px 40px;
