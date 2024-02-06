@@ -1,0 +1,113 @@
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .marca {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navegacao {
+    position: relative;
+}
+
+header .navegacao .navegacao-itens a {
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition:  0.3s ease;
+}
+
+header .navegacao .navegacao-itens a::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navegacao .navegacao-itens a:hover:before {
+    width: 100%;
+}
+
+@media (max-width:1040px) {
+    header {
+        padding: 12px 40px;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+
+    header .navegacao.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+    }
+
+    header .navegacao.active .navegacao-itens {
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    header .navegacao .navegacao-itens a {
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    header .navegacao .navegacao-itens a::before {
+        background: #222;
+        height: 2px;
+    }
+
+    .menu-mobile-btn {
+        background: url(../assets/menu-mobile.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu-mobile-btn.active {
+        z-index: 999;
+        background: url(../assets/menu-mobile-close.png) no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
