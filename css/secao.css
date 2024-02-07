@@ -12,6 +12,17 @@ section {
     background: #2696e9;
 }
 
+.home::before {
+    z-index: 777;
+    position: absolute;
+    content: '';
+    background: rgba(3, 96, 251, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 .home .conteudo {
     z-index: 888;
     color: #fff;
@@ -35,6 +46,8 @@ section {
 
 .home .conteudo p {
     margin-bottom: 65px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px #111111;
 }
 
 .home .conteudo a {
