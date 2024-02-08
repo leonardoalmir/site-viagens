@@ -28,6 +28,7 @@ section {
     color: #fff;
     width: 70%;
     margin-top: 50px;
+    display: none;
 }
 
 .home .conteudo h1{
@@ -102,5 +103,63 @@ Essa parte está sendo resolvida na linha 55 com o gap de 20px
     }
     .home .social-icones {
         right: 30px;
+    }
+}
+
+@media (max-width:1536px) {
+    .home .conteudo h1{
+        font-size: 3em;
+        line-height: 55px;
+    }
+    
+    .home .conteudo h1 span {
+        font-size: 1em;
+    }
+    
+    .home .conteudo p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width:1229px) {
+    .home .conteudo h1{
+        font-size: 3em;
+        line-height: 55px;
+    }
+    
+    .home .conteudo h1 span {
+        font-size: 1.2em;
+    }
+    
+    .home .conteudo p {
+        font-size: 1.1em;
+    }
+
+    .home .conteudo a {
+        padding: 10px 25px;
+        font-size: 0.8em;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+}
+
+@media (max-width:500px) {
+    .home .conteudo {
+        margin-top: 0px;
+    }
+
+    .home .conteudo h1{
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+    
+    .home .conteudo h1 span {
+        font-size: 1em;
+    }
+    
+    .home .conteudo p {
+        font-size: 0.9em;
+        margin-bottom: 45px;
     }
 }
